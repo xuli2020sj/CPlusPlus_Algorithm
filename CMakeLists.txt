@@ -19,7 +19,7 @@ endforeach()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 #编译静态库
-add_library(${CMAKE_PROJECT_NAME}_static STATIC ${SRC_LIST})
+add_library(${CMAKE_PROJECT_NAME}_static STATIC ${SRC_LIST} src/DesignPattern/Singleton.h src/algorithm/Sort.cpp src/algorithm/Sort.h src/algorithm/Search.cpp src/algorithm/Search.h)
 set_target_properties(${CMAKE_PROJECT_NAME}_static PROPERTIES OUTPUT_NAME "${CMAKE_PROJECT_NAME}")
 
 add_executable(CPlusPlus_Algorithm main.cpp)

@@ -22,6 +22,19 @@ private:
 public:
     Tree();
     void insert(int value);
+    bool find(int _value);
+
+    void preOrderTraverse();
+    int height();
+    int minVal();
+    bool equals(Tree &other);
+private:
+    int height(TreeNode*node);
+    void preOrderTraverse(TreeNode* node);
+    static int minVal(TreeNode* node);
+    static bool isLeaf(TreeNode* node);
+    bool equals(TreeNode* first, TreeNode* second);
+
 };
 
 }
