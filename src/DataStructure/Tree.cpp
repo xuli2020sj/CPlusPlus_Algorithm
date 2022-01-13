@@ -110,6 +110,31 @@ bool datastructure::Tree::equals(datastructure::TreeNode *first, datastructure::
     if (first == nullptr && second == nullptr) return true;
     if (first != nullptr && second != nullptr) return first->val == second->val
                                                       && equals(first->right_child, second->right_child)
-                                                      && equals(first->left_child, second->right_child);
+                                                      && equals(first->left_child, second->left_child);
     return false;
+}
+
+bool datastructure::Tree::isBinarySearchTree(datastructure::TreeNode *node, int min, int max) {
+    if (node == nullptr) return true;
+    if (node->val < min || node->val > max) return false;
+    return isBinarySearchTree(node->right_child, node->val, max)
+            && isBinarySearchTree(node->left_child, min, node->val);
+}
+
+bool datastructure::Tree::isBinarySearchTree() {
+    return isBinarySearchTree(root, INT32_MIN, INT32_MAX);
+}
+std::vector<int> datastructure::Tree::nodesAtKDistance(int k) {
+    vector<int> vec;
+    nodeAtKDistance(root, k, vec);
+    return vec;
+}
+void datastructure::Tree::nodeAtKDistance(datastructure::TreeNode *node, int Distance, std::vector<int> vec) {
+    if (node == nullptr) return;
+    if (Distance == 0) vec.push_back(node->val);
+    nodeAtKDistance(node->left_child, Distance-1, vec);
+    nodeAtKDistance(node->right_child, Distance-1, vec);
+}
+void datastructure::Tree::levelOrderTraversal(datastructure::TreeNode *node) {
+    //TODO
 }

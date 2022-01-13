@@ -6,6 +6,8 @@
 #define CPLUSPLUS_ALGORITHM_TREE_H
 
 #include <utility>
+#include <vector>
+
 
 namespace datastructure {
 
@@ -24,16 +26,25 @@ public:
     void insert(int value);
     bool find(int _value);
 
+    void levelOrderTraversial();
     void preOrderTraverse();
     int height();
     int minVal();
     bool equals(Tree &other);
+    bool isBinarySearchTree();
+    std::vector<int> nodesAtKDistance(int k);
+
 private:
     int height(TreeNode*node);
+
     void preOrderTraverse(TreeNode* node);
+    void levelOrderTraversal(TreeNode* node);
+
     static int minVal(TreeNode* node);
     static bool isLeaf(TreeNode* node);
     bool equals(TreeNode* first, TreeNode* second);
+    bool isBinarySearchTree(TreeNode* node, int min, int max);
+    void nodeAtKDistance(TreeNode*node, int Distance, std::vector<int> vec);
 
 };
 

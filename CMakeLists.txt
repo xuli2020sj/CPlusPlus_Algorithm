@@ -7,8 +7,9 @@ project(CPlusPlus_Algorithm)
 #set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 #设置子目录
 set(SUB_DIR_LIST "DataStructure" "algorithm")
-
 set(CMAKE_CXX_STANDARD 11)
+
+ADD_SUBDIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/src/IPC_MultiThread)
 
 #查找源文件
 foreach(SUB_DIR ${SUB_DIR_LIST})
@@ -19,7 +20,7 @@ endforeach()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 #编译静态库
-add_library(${CMAKE_PROJECT_NAME}_static STATIC ${SRC_LIST} src/DesignPattern/Singleton.h src/algorithm/Sort.cpp src/algorithm/Sort.h src/algorithm/Search.cpp src/algorithm/Search.h)
+add_library(${CMAKE_PROJECT_NAME}_static STATIC ${SRC_LIST})
 set_target_properties(${CMAKE_PROJECT_NAME}_static PROPERTIES OUTPUT_NAME "${CMAKE_PROJECT_NAME}")
 
 add_executable(CPlusPlus_Algorithm main.cpp)
