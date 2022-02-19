@@ -23,7 +23,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 add_library(${CMAKE_PROJECT_NAME}_static STATIC ${SRC_LIST})
 set_target_properties(${CMAKE_PROJECT_NAME}_static PROPERTIES OUTPUT_NAME "${CMAKE_PROJECT_NAME}")
 
-add_executable(CPlusPlus_Algorithm main.cpp)
+add_executable(CPlusPlus_Algorithm src/algorithm/main.cpp)
 
 #链接静态库
 target_link_libraries(${CMAKE_PROJECT_NAME} ${CMAKE_PROJECT_NAME}_static ${LINK_LIB_LIST})

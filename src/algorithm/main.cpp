@@ -1,4 +1,4 @@
-#include "src/DataStructure/Tree.h"
+#include "../DataStructure/Tree.h"
 #include <iostream>
 #include <memory>
 
