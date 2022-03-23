@@ -8,13 +8,13 @@ struct ListNode {
     int val;
     ListNode *next;
     ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
+    explicit ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
 class Solution {
 public:
-    ListNode* reverseKGroup(ListNode* head, int k) {
+    static ListNode* reverseKGroup(ListNode* head, int k) {
         if (head == nullptr) return nullptr;
         ListNode* curr = head;
         for (int i = 0; i < k -1; i++) {
@@ -28,7 +28,7 @@ public:
 
     }
 
-    ListNode* reverse1(ListNode* l1, ListNode* l2) {
+    static ListNode* reverse1(ListNode* l1, ListNode* l2) {
         ListNode* curr = l1;
         ListNode* pre = nullptr;
         ListNode* next = nullptr;
@@ -43,10 +43,10 @@ public:
 };
 
 int main() {
-    ListNode* node1 = new ListNode(1);
-    ListNode* node2 = new ListNode(2);
-    ListNode* node3 = new ListNode(3);
-    ListNode* node4 = new ListNode(4);
+    auto* node1 = new ListNode(1);
+    auto* node2 = new ListNode(2);
+    auto* node3 = new ListNode(3);
+    auto* node4 = new ListNode(4);
     node1->next = node2;
     node2->next = node3;
     node3->next = node4;
