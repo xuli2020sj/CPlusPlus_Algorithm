@@ -12,6 +12,7 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
+
 class Solution {
 public:
     static ListNode* reverseKGroup(ListNode* head, int k) {
