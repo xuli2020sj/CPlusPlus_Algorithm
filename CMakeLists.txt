@@ -10,6 +10,8 @@ set(SUB_DIR_LIST "DataStructure" "algorithm" "cpp")
 set(CMAKE_CXX_STANDARD 11)
 
 ADD_SUBDIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/src/IPC_MultiThread)
+ADD_SUBDIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/src/algorithm)
+ADD_SUBDIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/src/leetcode/editor/cn)
 
 #查找源文件
 foreach(SUB_DIR ${SUB_DIR_LIST})
