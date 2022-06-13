@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[67]二进制求和.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/AddBinary.md" />
+              <option name="frontendQuestionId" value="leetcode.cn67" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/AddBinary.cpp" />
+              <option name="titleSlug" value="add-binary" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/00118杨辉三角.cpp">
           <value>
             <LeetcodeEditor>
@@ -80,6 +91,39 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/AddBinary.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/AddBinary.md" />
+              <option name="frontendQuestionId" value="leetcode.cn67" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/AddBinary.cpp" />
+              <option name="titleSlug" value="add-binary" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/BaZiFuChuanZhuanHuanChengZhengShuLcof.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/BaZiFuChuanZhuanHuanChengZhengShuLcof.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 67" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/BaZiFuChuanZhuanHuanChengZhengShuLcof.cpp" />
+              <option name="titleSlug" value="ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/Base7.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/Base7.md" />
+              <option name="frontendQuestionId" value="leetcode.cn504" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/Base7.cpp" />
+              <option name="titleSlug" value="base-7" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/CountSubIslands.cpp">
           <value>
             <LeetcodeEditor>
@@ -124,6 +168,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/FindAndReplacePattern.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/FindAndReplacePattern.md" />
+              <option name="frontendQuestionId" value="leetcode.cn890" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/FindAndReplacePattern.cpp" />
+              <option name="titleSlug" value="find-and-replace-pattern" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/MaximalRectangle.cpp">
           <value>
             <LeetcodeEditor>
@@ -154,6 +209,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/RegularExpressionMatching.cpp" />
               <option name="titleSlug" value="regular-expression-matching" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/SpiralMatrixIi.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/SpiralMatrixIi.md" />
+              <option name="frontendQuestionId" value="leetcode.cn59" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/SpiralMatrixIi.cpp" />
+              <option name="titleSlug" value="spiral-matrix-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
