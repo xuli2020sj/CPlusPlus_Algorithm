@@ -168,6 +168,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/DiagonalTraverse.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/DiagonalTraverse.md" />
+              <option name="frontendQuestionId" value="leetcode.cn498" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/DiagonalTraverse.cpp" />
+              <option name="titleSlug" value="diagonal-traverse" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/FindAndReplacePattern.cpp">
           <value>
             <LeetcodeEditor>
@@ -187,6 +198,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/MaximalRectangle.cpp" />
               <option name="titleSlug" value="maximal-rectangle" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/NextGreaterElementI.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/NextGreaterElementI.md" />
+              <option name="frontendQuestionId" value="leetcode.cn496" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/NextGreaterElementI.cpp" />
+              <option name="titleSlug" value="next-greater-element-i" />
             </LeetcodeEditor>
           </value>
         </entry>

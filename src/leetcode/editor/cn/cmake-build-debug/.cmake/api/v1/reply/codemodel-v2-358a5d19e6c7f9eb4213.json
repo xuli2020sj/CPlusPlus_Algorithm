@@ -1,0 +1,159 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "leetcode",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Base7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Base7-Debug-f6cd192c7a755195681b.json",
+					"name" : "Base7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CourseSchedule::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CourseSchedule-Debug-e4efffd149d4d4c3504b.json",
+					"name" : "CourseSchedule",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CourseScheduleIi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CourseScheduleIi-Debug-d45c0856ff71aa53fc4f.json",
+					"name" : "CourseScheduleIi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DesignHashmap::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DesignHashmap-Debug-692c46b914a89e5bddf4.json",
+					"name" : "DesignHashmap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DiagonalTraverse::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DiagonalTraverse-Debug-af8cbf37eb9a8d1a7ed9.json",
+					"name" : "DiagonalTraverse",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FindAndReplacePattern::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FindAndReplacePattern-Debug-ccd6729a68b6eb962f92.json",
+					"name" : "FindAndReplacePattern",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MaximalRectangle::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MaximalRectangle-Debug-349a612944dcdf4b0cf0.json",
+					"name" : "MaximalRectangle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NextGreaterElementI::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NextGreaterElementI-Debug-ecbae42db2d422244abb.json",
+					"name" : "NextGreaterElementI",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PacificAtlanticWaterFlow::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PacificAtlanticWaterFlow-Debug-3daea5c2a3724d3052c4.json",
+					"name" : "PacificAtlanticWaterFlow",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RegularExpressionMatching::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RegularExpressionMatching-Debug-36213d1761938d554d3d.json",
+					"name" : "RegularExpressionMatching",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SpiralMatrixIi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SpiralMatrixIi-Debug-efc37286764eeed175db.json",
+					"name" : "SpiralMatrixIi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TaskScheduler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TaskScheduler-Debug-420991c05f82e151efa8.json",
+					"name" : "TaskScheduler",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/x/Desktop/BaiduNetdiskWorkspace/CPlusPlus_Algorithm/src/leetcode/editor/cn/cmake-build-debug",
+		"source" : "C:/Users/x/Desktop/BaiduNetdiskWorkspace/CPlusPlus_Algorithm/src/leetcode/editor/cn"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

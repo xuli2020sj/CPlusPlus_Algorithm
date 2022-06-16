@@ -1,0 +1,9 @@
+# ninja log v5
+1	1151	6768791692247146	CMakeFiles/NextGreaterElementI.dir/NextGreaterElementI.cpp.obj	d32ce8224210dc8b
+1153	1259	6768791693308114	NextGreaterElementI.exe	69fee80308fd5255
+2	1221	6769931057657060	CMakeFiles/NextGreaterElementI.dir/NextGreaterElementI.cpp.obj	d32ce8224210dc8b
+1221	1317	6769931058607925	NextGreaterElementI.exe	69fee80308fd5255
+1	1099	6769931220049887	CMakeFiles/DiagonalTraverse.dir/DiagonalTraverse.cpp.obj	d4b529c259ac71d4
+1100	1181	6769931220840603	DiagonalTraverse.exe	6208b86a3aa8d22c
+2	1101	6769931826261803	CMakeFiles/DiagonalTraverse.dir/DiagonalTraverse.cpp.obj	d4b529c259ac71d4
+1102	1182	6769931827042513	DiagonalTraverse.exe	6208b86a3aa8d22c
