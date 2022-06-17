@@ -17,6 +17,15 @@ using namespace std;
 
 namespace sort{
     template<typename T>
+    bool validateSort(vector<T>& nums) {
+        if (nums.size() <= 1) return true;
+        for (int i = 1; i < nums.size(); i++) {
+            if (nums[i] < nums[i-1]) return false;
+        }
+        return true;
+    }
+
+    template<typename T>
     void bubbleSort(vector<T> &vec) {
         size_t n = vec.size();
         for (int i = 0; i < n; i++) {
@@ -64,25 +73,32 @@ namespace sort{
         }
     }
 
-    vector<int> temp;
-    void merge_sort(vector<int>& vec, int left, int right) {
-        if (left >= right) return;
-        int axis = (left + right) >> 1;
-        merge_sort(vec, left, axis);
-        merge_sort(vec, axis + 1, right);
 
-        int i = left, j = axis + 1, k = 0;
-        while (i <= axis && j <= right) {
+    void merge_sort(vector<int>& vec, int left, int right, vector<int>& temp) {
+        if (left >= right) return;
+        int pivot = (left + right) >> 1;
+        merge_sort(vec, left, pivot, temp);
+        merge_sort(vec, pivot + 1, right, temp);
+
+        int i = left, j = pivot + 1, k = 0;
+        while (i <= pivot && j <= right) {
             if (vec[i] <= vec[j]) {
                 temp[k++] = vec[i++];
             } else {
                 temp[k++] = vec[j++];
             }
         }
-        while (i <= axis) temp[k++] = vec[i++];
+        while (i <= pivot) temp[k++] = vec[i++];
         while (j <= right) temp[k++] = vec[j++];
         for (int i1 = left, j1 = 0; i1<=right; i1++, j1++) vec[i1] = temp[j1];
     }
+
+    void merge_sort(vector<int>& vec) {
+        if (vec.size() <= 1) return ;
+        vector<int> temp(vec.size());
+        merge_sort(vec, 0, vec.size()-1, temp);
+    }
+
 
     template<typename T>
     void quickSort(vector<T>& nums, int left, int right) {
@@ -101,6 +117,12 @@ namespace sort{
 
         quickSort(nums, left, i);
         quickSort(nums, i+2, right);
+    }
+
+    template<typename T>
+    void quickSort(vector<T>& nums) {
+        if (nums.size() <= 1) return ;
+        quickSort(nums, 0, nums.size()-1);
     }
 }
 
