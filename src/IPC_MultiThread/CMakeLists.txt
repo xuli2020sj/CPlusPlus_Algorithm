@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 project(IPC_MultiThread)
+
 include_directories(.)
 
 file(GLOB SRC_LIST *.cpp)

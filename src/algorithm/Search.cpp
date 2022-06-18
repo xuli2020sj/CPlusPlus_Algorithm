@@ -5,7 +5,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
 #include "Search.h"
 
 using namespace std;
@@ -26,6 +25,22 @@ void quick_sort(vector<int>& vec, int left, int right) {
     }
     quick_sort(vec, left, j);
     quick_sort(vec,  j + 1, right);
+}
+
+void quickSort(vector<int>& vec, int left, int right) {
+    if (left >= right) return ;
+    int i = left;
+    int pivot = rand() % (right - left + 1) + left;
+    swap(vec[pivot], vec[right]);
+    for (int j = left; j < right; j++) {
+        if (vec[j] < vec[right]) {
+            swap(vec[i], vec[j]);
+            i++;
+        }
+    }
+    swap(vec[i], vec[right]);
+    quickSort(vec, left, i);
+    quickSort(vec, i+2, right);
 }
 
 void quick_sort(vector<int>& vec) {
@@ -78,10 +93,28 @@ int binary_search(vector<int>& vec, int target) {
     return -1;
 }
 
+int binary_search_iterative(vector<int>& vec, int target, int left, int right) {
+    if (left > right) return -1;
+    int mid = (right - left) / 2;
+    if (target == vec[mid]) {
+        return mid;
+    } else if (target > vec[mid]) {
+        return binary_search_iterative(vec, target, mid+1, right);
+    } else if (target < vec[mid]) {
+        return binary_search_iterative(vec, target, left, mid-1);
+    }
+}
+
+/**
+ * 查找小于等于target的第一个元素
+ * @param vec
+ * @param target
+ * @return
+ */
 int binary_search_lower_bound(vector<int>& vec, int target) {
-    int left = 0, right = vec.size() - 1, mid = (left + right)  / 2;
+    int left = 0, right = vec.size() - 1;
     while (left <= right) {
-        mid = (left + right) / 2;
+        int mid = (left + right) / 2;
         if (vec[mid] > target) {
             right = mid - 1;
         } else if (vec[mid] < target) {
@@ -93,11 +126,16 @@ int binary_search_lower_bound(vector<int>& vec, int target) {
     return left < vec.size() ? left : -1;
 }
 
-
+/**
+ * 查找大于等于给定值的以一个元素
+ * @param vec
+ * @param target
+ * @return
+ */
 int binary_search_upper_bound(vector<int>& vec, int target) {
-    int left = 0, right = vec.size() - 1, mid = (left + right)  / 2;
+    int left = 0, right = vec.size() - 1;
     while (left <= right) {
-        mid = (left + right) / 2;
+        int mid = (left + right) / 2;
         if (vec[mid] > target) {
             right = mid - 1;
         } else if (vec[mid] < target) {
@@ -120,31 +158,32 @@ int main() {
         cout << x << " ";
     });
     cout << endl;
-    cout << "lower bound pos: " << lower_bound(v1.begin(), v1.end(), 3) - v1.begin() << endl;
-    cout << "upper bound pos: " << upper_bound(v1.begin(), v1.end(), 3) - v1.begin() << endl;
+    cout << "lower bound pos: " << lower_bound(v1.begin(), v1.end(), 7) - v1.begin() << endl;
+    cout << "upper bound pos: " << upper_bound(v1.begin(), v1.end(), 7) - v1.begin() << endl;
 
     cout << endl;
 
     // my method
     cout << "quick sort" << endl;
     vector<int> v2 = v;
-    quick_sort(v2);
+//    quick_sort(v2);
+    quickSort(v2, 0, v2.size()-1);
     std::for_each(v2.begin(), v2.end(), [](int x){
         cout << x << " ";
     });
     cout << endl;
     cout << "binary search index : " << binary_search(v2, 9) << endl;
-    cout << "binary search index : " << binary_search_lower_bound(v2, 9) << endl;
-    cout << "binary search index : " << binary_search_upper_bound(v2, 9) << endl;
+    cout << "binary search index lower_bound: " << binary_search_lower_bound(v2, 7) << endl;
+    cout << "binary search index upper_bound: " << binary_search_upper_bound(v2, 7) << endl;
     cout << endl;
 
-    cout << "merge sort" << endl;
-    vector<int> v3 = v;
-    merge_sort(v3);
-    std::for_each(v3.begin(), v3.end(), [](int x){
-        cout << x << " ";
-    });
-    cout << endl;
+//    cout << "merge sort" << endl;
+//    vector<int> v3 = v;
+//    merge_sort(v3);
+//    std::for_each(v3.begin(), v3.end(), [](int x){
+//        cout << x << " ";
+//    });
+//    cout << endl;
     return 0;
 }
 

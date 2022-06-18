@@ -7,6 +7,7 @@
 
 #include <cstdlib>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 //template <typename T>
@@ -124,9 +125,58 @@ namespace sort{
         if (nums.size() <= 1) return ;
         quickSort(nums, 0, nums.size()-1);
     }
+
+
+    void countingSort(vector<int>& nums) {
+        if (nums.size() <= 1) return ;
+        auto max_ele = *max_element(nums.begin(),nums.end());
+        vector<int> count_num(max_ele+1);
+        for (auto num : nums) {
+            count_num[num]++;
+        }
+
+        for (int i = 1; i < count_num.size(); i++) {
+            count_num[i] += count_num[i-1];
+        }
+
+        vector<int> res(nums.size());
+        for (auto num : nums) {
+            int pos = count_num[num];
+            res[pos] = num;
+            count_num[num]--;
+        }
+        nums = res;
+    }
 }
 
 
 
 
 #endif//CPLUSPLUS_ALGORITHM_SORT_H
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

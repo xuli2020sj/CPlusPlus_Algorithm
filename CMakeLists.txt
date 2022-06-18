@@ -7,7 +7,7 @@ project(CPlusPlus_Algorithm)
 #set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 #设置子目录
 set(SUB_DIR_LIST "DataStructure" "algorithm" "cpp")
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 ADD_SUBDIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/src/IPC_MultiThread)
 ADD_SUBDIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/src/algorithm)
